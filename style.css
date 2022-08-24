@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Monserrat", sans-serif;
+}
+section{
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 4px 1px rgb(179, 169, 169);
+    margin-bottom: 30px;
+    padding-block: 2rem;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+}
+h1{
+    text-align: center;
+    color: hsl(228, 12%, 48%);
+    padding-bottom: 40px;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+button{
+    margin-right: 1rem;
+    width: 50%;
+    display: flex;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 6px;
+    margin: 6px;
+}
+form{
+    position: relative;
+}
+#form{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+#form input{
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: large;
+    border-radius: 2px;
+    color: hsl(228, 45%, 44%);
+    box-shadow: 0.1px 1px 2px 1px rgb(145, 140, 140);
+}
+#number{
+    width: 100%;
+    padding: 5px 25px;
+    border-radius: 15px;
+    outline: none;
+    border: 0.5px solid grey;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+#convert{
+    position: absolute;
+    right: 0;
+    padding: 5px 25px;
+    border-radius: 15px;
+    outline: none;
+    border: 0.5px solid grey;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+p{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 10px;
+    color: rgb(20, 94, 82);
+}
+.output{
+    font-size: 12px;
+}
+@media (max-width: 550px) {
+    section{
+        margin: 15px;
+        width: 100%;
+    }
+    h1{
+        font-size: 22px;
+    }
+}
