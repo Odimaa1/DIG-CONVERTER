@@ -45,7 +45,7 @@ form.onsubmit = function(event){
             output.innerHTML = `${number} feet = ${result} centimetres`;
         }
         else if (convertType == 'centimetre') {
-            let result = (number * 0.0328084);
+            let result = (number * 0.0328084).toFixed(2);
             output.innerHTML = `${number} centimetres = ${result} feet`;
         }
     } else {
